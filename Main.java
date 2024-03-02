@@ -10,11 +10,7 @@ public class Main {
 
         String fileName;
         System.out.println("input file name:");
-        fileName = sc.nextLine().trim();
-
-        if (!fileName.endsWith(".txt")) {
-            fileName += ".txt";
-        }
+        fileName = sc.nextLine();
         String userHome = System.getProperty("user.home");
         fileName = userHome + "/" + fileName;
         sc.close();
