@@ -15,6 +15,8 @@ public class Main {
         if (!fileName.endsWith(".txt")) {
             fileName += ".txt";
         }
+        String userHome = System.getProperty("user.home");
+        fileName = userHome + "/" + fileName;
         sc.close();
 
         try (Scanner fileScanner = new Scanner(new FileReader(fileName))) {
